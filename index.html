@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div page-container>
+      <div class="grid">
+        <ul>
+          <li><a class="FB">Fairbanks</a></li>
+          <li><a class="HO">Honolulu</a></li>
+          <li><a class="PX">Portland</a></li>
+          <li><a class="KU">Kuna</a></li>
+          <li><a class="AU">Austin</a></li>
+          <li><a class="BM">Bismark</a></li>
+          <li><a class="OM">Omaha</a></li>
+          <li><a class="BA">Bangor</a></li>
+          <li><a class="MI">Miami</a></li>
+        </ul>
+      </div>
+
+      <div class="search-grid">
+        <form class="search-form" id="search-form">
+          <ul>
+            <li>
+              <input
+                class="search"
+                type="text"
+                placeholder="🔍 Enter a city..."
+                id="city-input"
+              />
+            </li>
+            <li>
+              <button class="city-search" id="city-search" type="submit">
+                Search
+              </button>
+            </li>
+            <li>
+              <button class="current-search" id="current-search" type="click">
+                Current
+              </button>
+            </li>
+          </ul>
+        </form>
+      </div><div class="container">
+          <div class="icon"><sup>🌥️</sup></div>
+          <div class="temp"><h1>17</h1></div>
+          <div class="unit">
+            <h6>
+              <a href="#" id="celsius-link">°C</a> /
+              <a href="#" id="fahrenheit-link">°F</a>
+            </h6>
+          </div>
+          <div class="city"><h4>Kuna</h4></div>
+          <div class="date"><h3>Friday, 17:47</h3></div>
+          <div class="precip">Precipitation: 100%</div>
+          <div class="wind">Wind: 30 mph</div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="Sunday">Sunday</div>
+        <div class="Monday">Monday</div>
+        <div class="Tuesday">Tuesday</div>
+        <div class="Wednesday">Wednesday</div>
+        <div class="Thursday">Thursday</div>
+        <div class="Friday">Friday</div>
+        <div class="Saturday">Saturday</div>
+        <div class="pair1">
+          <div class="temp1">77°</div>
+          <div class="icon1">☀️</div>
+        </div>
+        <div class="pair2">
+          <div class="temp2">72°</div>
+          <div class="icon2">☀️</div>
+        </div>
+        <div class="pair3">
+          <div class="temp3">70°</div>
+          <div class="icon3">🌥️</div>
+        </div>
+        <div class="pair4">
+          <div class="temp4">67°</div>
+          <div class="icon4">🌦️</div>
+        </div>
+        <div class="pair5">
+          <div class="temp5">62°</div>
+          <div class="icon5">⛈️</div>
+        </div>
+        <div class="pair6">
+          <div class="temp6">65°</div>
+          <div class="icon6">🌦️</div>
+        </div>
+        <div class="pair7">
+          <div class="temp7">79°</div>
+          <div class="icon7">🌥️</div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
