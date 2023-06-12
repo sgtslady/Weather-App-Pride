@@ -1,0 +1,372 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    #fbeded,
+    #fceee9,
+    #fbefe5,
+    #f7f1e3,
+    #f0f4e4,
+    #e8f6e7,
+    #e1f7ed,
+    #dbf8f5,
+    #d9f6fd,
+    #ddf3ff,
+    #e6efff,
+    #f1eaff
+  );
+  background-size: 795px;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style: horizontal;
+  padding-left: 0;
+  min-width: 696px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 20px, 40px, 20px, 40px;
+  margin: 30px 40px;
+}
+li {
+  display: inline-block;
+  padding: 5px;
+  width: 0 auto;
+  font-size: 18px;
+}
+.FB {
+  color: #9553ff;
+}
+.HO {
+  color: #353cf7;
+}
+.PX {
+  color: #006fff;
+}
+.KU {
+  color: #04c3ff;
+}
+.AU {
+  color: #00e1db;
+}
+.BM {
+  color: #68cf3b;
+}
+.OM {
+  color: #ffdb1f;
+}
+.BA {
+  color: #ff9900;
+}
+.MI {
+  color: #ff1e78;
+}
+.grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-gap: 20px;
+}
+.search-grid ul {
+  list-style: horizontal;
+  padding-left: 0;
+  min-width: 696px;
+  list-style: none;
+  padding: 20px, 20px, 20px, 20px;
+  margin: 10px 35px;
+}
+.search-grid li {
+  display: inline;
+  padding: 5px;
+  width: 0 auto;
+  font-size: 18px;
+}
+.search-grid {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.search {
+  text-align: left;
+  margin: 0px auto;
+  font-size: 16px;
+  background: #fbd6d4;
+  border: 3px solid #ec3226;
+  color: grey;
+  padding: 10px 200px 10px 20px;
+}
+button.city-search {
+  margin: 0px auto;
+  font-size: 16px;
+  background: #ffc266;
+  opacity: 0.6;
+  border: 3px solid #e89212;
+  color: rgb(0, 0, 0);
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+button.current-search {
+  margin: 0px auto;
+  font-size: 16px;
+  background: #ffe979;
+  opacity: 0.6;
+  border: 3px solid #e8c30a;
+  color: rgb(0, 0, 0);
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+.container {
+  display: grid;
+  max-width: 45%;
+  grid-template-columns: 0.75fr 0.75fr 1fr 0.5fr 0.25fr 1fr;
+  grid-template-rows: 25px 25px 25px 25px 25px 25px;
+  gap: 10px 10px;
+  grid-template-areas:
+    ". . . . . ."
+    ". icon temp unit . city"
+    ". icon temp . . date"
+    ". icon temp . . precip"
+    ". icon temp . . wind"
+    ". . . . . .";
+}
+.icon {
+  grid-area: icon;
+  font-size: 80px;
+  margin-top: 35px;
+  margin-left: -40px;
+  align-items: left;
+}
+.temp {
+  grid-area: temp;
+  font-size: 90px;
+  font-family: Arial Narrow;
+  margin-top: -150px;
+  margin-left: -50px;
+}
+.unit {
+  grid-area: unit;
+  font-size: 25px;
+  margin-top: -28px;
+  margin-left: -40px;
+}
+.city {
+  grid-area: city;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-left: -20px;
+}
+.date {
+  grid-area: date;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10px;
+  font-size: 13px;
+  margin-left: -20px;
+}
+.precip {
+  grid-area: precip;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 18px;
+  font-size: 16px;
+  margin-left: -20px;
+}
+.wind {
+  grid-area: wind;
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-left: -20px;
+}
+
+.footer-container {
+  margin: 20px 80px;
+  display: grid;
+  grid-template-columns: 75px 75px 75px 75px 75px 75px 75px;
+  grid-template-rows: 20px auto 30px;
+  grid-auto-columns: 1fr;
+  gap: 0px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Sunday Monday Tuesday Wednesday Thursday Friday Saturday"
+    "temp1 temp2 temp3 temp4 temp5 temp6 temp7"
+    "icon1 icon2 icon3 icon4 icon5 icon6 icon7";
+}
+.Sunday {
+  grid-area: Sunday;
+  display: center;
+  color: #cb3d48;
+  text-align: center;
+  margin: 0px;
+}
+.Monday {
+  grid-area: Monday;
+  display: center;
+  color: #ff9900;
+  text-align: center;
+}
+.Tuesday {
+  grid-area: Tuesday;
+  display: center;
+  color: #ffdb1f;
+  text-align: center;
+}
+.Wednesday {
+  grid-area: Wednesday;
+  display: center;
+  color: #1cc24b;
+  text-align: center;
+}
+.Thursday {
+  grid-area: Thursday;
+  display: center;
+  color: #006fff;
+  text-align: center;
+}
+.Friday {
+  grid-area: Friday;
+  display: center;
+  color: #353cf7;
+  text-align: center;
+}
+.Saturday {
+  grid-area: Saturday;
+  display: center;
+  color: #9553ff;
+  text-align: center;
+}
+.temp1 {
+  grid-area: temp1;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.temp2 {
+  grid-area: temp2;
+  padding: 5px 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.temp3 {
+  grid-area: temp3;
+  padding: 5px 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.temp4 {
+  grid-area: temp4;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.temp5 {
+  grid-area: temp5;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.temp6 {
+  grid-area: temp6;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.temp7 {
+  grid-area: temp7;
+  padding: 5px 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.icon1 {
+  grid-area: icon1;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.icon2 {
+  grid-area: icon2;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.icon3 {
+  grid-area: icon3;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.icon4 {
+  grid-area: icon4;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.icon5 {
+  grid-area: icon5;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.icon6 {
+  grid-area: icon6;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 30px;
+}
+.icon7 {
+  grid-area: icon7;
+  padding: 5px 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.pair1 {
+  display: center;
+  padding: 0px;
+  clear: right;
+  width: 100%;
+  border: 3px solid #cb3d48;
+}
+.pair2 {
+  display: center;
+  padding: 0px;
+  clear: right;
+  width: 100%;
+  border: 3px solid #ff9900;
+}
+.pair3 {
+  display: block;
+  padding: 0px;
+  clear: right;
+  width: 100%;
+  border: 3px solid #ffdb1f;
+}
+.pair4 {
+  display: block;
+  padding: 0px;
+  clear: right;
+  width: 100%;
+  border: 3px solid #1cc24b;
+}
+.pair5 {
+  display: block;
+  padding: 0px;
+  clear: right;
+  width: 100%;
+  border: 3px solid #006fff;
+}
+.pair6 {
+  display: block;
+  padding: 0px;
+  clear: right;
+  width: 100%;
+  border: 3px solid #353cf7;
+}
+.pair7 {
+  display: block;
+  padding: 0px;
+  clear: right;
+  width: 100%;
+  border: 3px solid #9553ff;
+}
